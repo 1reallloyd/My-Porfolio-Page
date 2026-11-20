@@ -430,7 +430,72 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none}
 }
+
+/* ===== TIGHTER SPACING: paste at the very END of your <style> ===== */
+
+/* Desktop */
+section{padding:88px 0}
+#stats{padding:0 0 48px}
+.head{margin-bottom:36px}
+.head-pill{margin-bottom:10px}
+.head p{margin-top:10px}
+.sub-head{margin:52px 0 22px}
+.services,.edu,.works,.meters,.skills-grid{gap:20px}
+.about-grid{gap:20px}
+.job+.job{margin-top:20px}
+.more{margin-top:36px}
+.tiles{margin-top:34px}
+footer{padding:28px 0 36px}
+
+/* Tablet */
+@media (max-width:1080px){
+  section{padding:72px 0}
+  .hero{padding:calc(var(--nav-h) + 32px) 0 48px}
+  .hero .wrap{gap:36px}
+  .head{margin-bottom:32px}
+}
+
+/* Mobile */
+@media (max-width:768px){
+  section{padding:44px 0}
+  #stats{padding:0 0 20px}
+  .head{margin-bottom:22px}
+  .head-pill{margin-bottom:8px;font-size:.78rem}
+  .head p{margin-top:8px;font-size:1rem}
+  .sub-head{margin:32px 0 14px;font-size:1.35rem}
+
+  .hero{padding:calc(var(--nav-h) + 14px) 0 20px}
+  .hero .wrap{gap:26px}
+  .hero-badge{margin-bottom:10px}
+  .hero-role{margin-top:12px}
+  .hero p.lead{margin-top:12px}
+  .hero-cta{margin-top:18px;gap:10px}
+  .stage{aspect-ratio:1/.9;margin-bottom:6px}
+
+  .about-grid,.about-extra,.services,.edu,.works,.meters,.skills-grid{gap:12px}
+  .about-main{padding:20px 18px;gap:14px}
+  .mini-card{padding:14px 16px}
+  .edu-card{padding:16px 14px}
+  .service{padding:20px 18px}
+  .service .s-ico{margin-bottom:12px}
+  .job{padding:18px 16px}
+  .job+.job{margin-top:12px}
+  .job-dot{margin-bottom:10px}
+  .meter-group{padding:20px 16px}
+  .meter+.meter{margin-top:14px}
+  .skill-card{padding:16px}
+  .work-body{padding:16px 16px 18px}
+  .more{margin-top:22px}
+  .contact-card{padding:24px 16px}
+  .tiles{margin-top:20px;gap:10px}
+  .tile{padding:16px}
+  footer{padding:8px 0 24px}
+  footer .wrap{gap:12px}
+}
 </style>
+  <!-- GoatCounter: privacy-friendly visit counter -->
+<script data-goatcounter="https://instant-resume.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
